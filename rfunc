@@ -68,7 +68,6 @@ generate.data.retrospectively= function(pc){
     colnames(d)= c('case.status', 'backward.time', 'follow.time', 'del', 'x1', 'x2')
 
     return(mydata = data.frame(d))
-
 }
 
 
@@ -253,7 +252,6 @@ semipar.surv.icpv.cox= function(mydata,xnames.gamma){
 
     surv.out= list(mu.surv.all, gammas)#, cumsum.lambda)
     return(surv.out)
-
 }
 
 
@@ -283,7 +281,6 @@ neg.log.lik= function(mypar,mydata,x.col.ix.beta,surv.list){
 
     return(negloglik)
 }
-
 
 
 ### Single-step: full likelihood (survival + logistic) with Weibull
@@ -575,7 +572,6 @@ final.out= function(pc,seed){
 
     outglmconic= glm(conicind~conicx1+conicx2,family= binomial(link = "logit"),data=conicdata)
     outglmbetaconic= as.numeric(outglmconic$coef)
-
 
 ### output
     out.comb= list(out.par,out.cox,wei.full.par,
