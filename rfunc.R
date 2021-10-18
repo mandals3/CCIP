@@ -610,5 +610,4 @@ outglmbetaconic.r3= round(outglmbetaconic,3)
     print(paste("intercept= ",outglmbetaconic.r3[1],"beta1= ",outglmbetaconic.r3[2],"beta2= ",outglmbetaconic.r3[3]))
 
     return(out.comb)
-
 }
